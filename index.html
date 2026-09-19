@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cork &amp; Carriage</title>
+  <meta name="theme-color" content="#24352c" />
+  <meta name="description" content="Cork &amp; Carriage LLC rents a 1950 Chevy 3600 for photo sessions on Virginia’s Middle Peninsula and Northern Neck. 3600 Uncorked, the dry-hire mobile bar, opens Spring 2027." />
+  <meta property="og:title" content="Cork &amp; Carriage" />
+  <meta property="og:description" content="Book the 1950 Chevrolet 3600 for photo sessions now. 3600 Uncorked opens Spring 2027." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .nav-scrolled { background: color-mix(in oklab, var(--color-bg) 92%, transparent); border-color: var(--color-line); color: var(--color-ink); backdrop-filter: blur(8px); }
+    .nav-scrolled a, .nav-scrolled .brand-name { color: var(--color-ink); }
+    .nav-scrolled .nav-link { color: color-mix(in oklab, var(--color-ink) 72%, transparent); }
+    .nav-scrolled .nav-link:hover { color: var(--color-ink); }
+    .nav-scrolled .book-btn { background: var(--color-forest); color: var(--color-accent-fg); }
+    .mobile-panel { display: none; }
+    .mobile-panel.open { display: block; }
+    @media (max-width: 767px) {
+      .desktop-nav { display: none !important; }
+    }
+  </style>
+</head>
+<body class="antialiased">
+  <div class="min-h-screen bg-bg text-ink">
+    <header id="site-header" class="sticky top-0 z-40 border-b transition-[background-color,border-color,color] duration-200 border-transparent bg-transparent text-accent-fg">
+      <div class="mx-auto flex h-14 max-w-6xl items-center justify-between gap-3 px-4 sm:h-16 sm:px-6">
+        <a href="#top" class="flex items-center gap-2.5">
+          <img src="logo.jpg" alt="Cork &amp; Carriage" class="rounded-full object-cover size-10" />
+          <span class="brand-name font-display text-base font-medium tracking-tight sm:text-lg">Cork &amp; Carriage</span>
+        </a>
+        <nav class="desktop-nav hidden items-center gap-1 md:flex">
+          <a href="#services" class="nav-link rounded-sm px-2.5 py-2 text-sm transition-colors duration-150 text-accent-fg/80 hover:text-accent-fg">Services</a>
+          <a href="#photos" class="nav-link rounded-sm px-2.5 py-2 text-sm transition-colors duration-150 text-accent-fg/80 hover:text-accent-fg">Photo truck</a>
+          <a href="#uncorked" class="nav-link rounded-sm px-2.5 py-2 text-sm transition-colors duration-150 text-accent-fg/80 hover:text-accent-fg">3600 Uncorked</a>
+          <a href="#circuit" class="nav-link rounded-sm px-2.5 py-2 text-sm transition-colors duration-150 text-accent-fg/80 hover:text-accent-fg">The circuit</a>
+          <a href="#book" class="nav-link rounded-sm px-2.5 py-2 text-sm transition-colors duration-150 text-accent-fg/80 hover:text-accent-fg">Request a date</a>
+        </nav>
+        <div class="flex items-center gap-1">
+          <a href="#book" class="book-btn items-center justify-center gap-2 font-sans text-sm font-medium transition-opacity duration-150 ease-out bg-accent-fg text-forest hover:opacity-90 h-10 rounded-sm px-3.5 hidden sm:inline-flex">Book the truck</a>
+          <button id="menu-btn" class="inline-flex items-center justify-center h-10 rounded-sm px-3.5 md:hidden" type="button" aria-expanded="false" aria-label="Open menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5"><path d="M4 12h16"></path><path d="M4 18h16"></path><path d="M4 6h16"></path></svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-panel" class="mobile-panel border-t border-line bg-bg px-4 py-3 md:hidden">
+        <a href="#services" class="block py-2 text-sm text-ink">Services</a>
+        <a href="#photos" class="block py-2 text-sm text-ink">Photo truck</a>
+        <a href="#uncorked" class="block py-2 text-sm text-ink">3600 Uncorked</a>
+        <a href="#circuit" class="block py-2 text-sm text-ink">The circuit</a>
+        <a href="#book" class="block py-2 text-sm text-ink">Request a date</a>
+      </div>
+    </header>
+    <main>
+      <section id="top" class="relative -mt-14 min-h-svh sm:-mt-16">
+        <img src="concept.jpg" alt="Green 1950 Chevrolet 3600 beside a 1963 Yellowstone canned-ham trailer finished as the 3600 Uncorked mobile bar" class="absolute inset-0 size-full object-cover object-center" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/15 to-ink/25"></div>
+        <div class="relative mx-auto flex min-h-svh max-w-6xl flex-col justify-end px-4 pb-16 pt-28 sm:px-6 sm:pb-20">
+          <p class="text-xs font-medium tracking-[0.18em] text-accent-fg/70 uppercase">Cork &amp; Carriage LLC · Middlesex County, Virginia</p>
+          <h1 class="mt-4 font-display text-5xl font-medium tracking-tight text-accent-fg sm:text-7xl">Cork &amp; Carriage</h1>
+          <p class="mt-3 font-display text-2xl text-accent-fg sm:text-3xl">The truck is ready. The bar is coming.</p>
+          <div class="mt-4 h-1 w-16 bg-lime" aria-hidden="true"></div>
+          <p class="mt-6 max-w-lg text-base text-accent-fg/85 sm:text-lg">Book the 1950 Chevrolet 3600 for photo sessions on the Middle Peninsula, Northern Neck, and nearby. 3600 Uncorked, the dry-hire mobile bar, opens Spring 2027.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#book" class="inline-flex items-center justify-center font-sans text-sm font-medium bg-accent-fg text-forest hover:opacity-90 h-12 rounded-md px-5">Book the truck</a>
+            <a href="#uncorked" class="inline-flex items-center justify-center gap-2 font-sans text-sm font-medium bg-transparent h-12 rounded-md px-5 text-accent-fg hover:bg-accent-fg/10">Spring 2027
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="size-4"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
+        <p class="text-xs font-medium tracking-[0.18em] text-muted uppercase">Two services</p>
+        <h2 class="mt-3 max-w-2xl font-display text-3xl font-medium text-ink sm:text-5xl">One yard. Two machines. Different calendars.</h2>
+        <div class="mt-10 grid gap-4 lg:grid-cols-2">
+          <article class="rounded-xl bg-forest p-8 text-accent-fg shadow-[var(--shadow-border)]">
+            <p class="text-xs font-medium tracking-[0.18em] text-accent-fg/60 uppercase">Available now</p>
+            <h3 class="mt-3 font-display text-3xl">Photo truck</h3>
+            <p class="mt-3 text-sm leading-relaxed text-accent-fg/80">Rent the 1950 Chevy 3600 as a backdrop for engagements, family and holiday cards, styled shoots, and wedding-day portraits. You hire the photographer. We deliver and stage the truck.</p>
+            <a href="#photos" class="inline-flex items-center justify-center font-sans text-sm font-medium bg-accent-fg text-forest hover:opacity-90 h-12 rounded-md px-5 mt-8">See photo days</a>
+          </article>
+          <article class="rounded-xl bg-surface p-8 shadow-[var(--shadow-border)]">
+            <p class="text-xs font-medium tracking-[0.18em] text-muted uppercase">Spring 2027</p>
+            <h3 class="mt-3 font-display text-3xl text-ink">3600 Uncorked</h3>
+            <p class="mt-3 text-sm leading-relaxed text-muted">A 1963 Yellowstone canned-ham trailer finished as a dry-hire mobile bar, delivered with the 3600 beginning Spring 2027. You provide the drinks and bartender. We bring the truck and the bar. Join the waitlist if you already have a date.</p>
+            <a href="#uncorked" class="inline-flex items-center justify-center font-sans text-sm font-medium bg-transparent text-ink shadow-[var(--shadow-border)] hover:bg-surface h-12 rounded-md px-5 mt-8">Join the waitlist</a>
+          </article>
+        </div>
+      </section>
+      <section id="photos" class="border-t border-line bg-surface">
+        <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
+          <p class="text-xs font-medium tracking-[0.18em] text-muted uppercase">Photo truck · booking now</p>
+          <h2 class="mt-3 max-w-2xl font-display text-3xl font-medium text-ink sm:text-4xl">Park the Chevy. The camera does the rest.</h2>
+          <p class="mt-4 max-w-2xl text-muted">The cornerstone of Cork &amp; Carriage is the 1950 Chevrolet 3600 Advance Design — a ¾-ton truck with a chrome grille, rented as a photography backdrop. You choose the photographer and a location in our service area. We place the truck and stay out of the frame.</p>
+          <img src="lookbook-holiday-farm.jpg" alt="Green 1950 Chevrolet 3600 on a Virginia farm, wreath on the grille for a holiday-card session" class="mt-8 h-64 w-full rounded-xl object-cover object-center sm:h-[28rem]" />
+          <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <article class="rounded-xl bg-bg p-5 shadow-[var(--shadow-border)]">
+              <h3 class="font-display text-xl text-ink">Spring</h3>
+              <p class="mt-2 text-sm leading-relaxed text-muted">Bloom season on the rivers. Dogwoods, azaleas, and engagement or bridal portraits on lawns from Gloucester to Irvington.</p>
+            </article>
+            <article class="rounded-xl bg-bg p-5 shadow-[var(--shadow-border)]">
+              <h3 class="font-display text-xl text-ink">Summer</h3>
+              <p class="mt-2 text-sm leading-relaxed text-muted">Golden hour on the Rappahannock and Piankatank. Warm color, long light, and a working vintage truck against field and water.</p>
+            </article>
+            <article class="rounded-xl bg-bg p-5 shadow-[var(--shadow-border)]">
+              <h3 class="font-display text-xl text-ink">Fall</h3>
+              <p class="mt-2 text-sm leading-relaxed text-muted">Harvest color and the Urbanna Oyster Festival. Maple, marsh, and the green truck against foliage and yacht-club lawns.</p>
+            </article>
+            <article class="rounded-xl bg-bg p-5 shadow-[var(--shadow-border)]">
+              <h3 class="font-display text-xl text-ink">Winter</h3>
+              <p class="mt-2 text-sm leading-relaxed text-muted">Wreaths on the grille, string lights, and holiday cards. Quiet winter light reflecting off a truck that refuses to quit.</p>
+            </article>
+          </div>
+          <div class="mt-4 grid gap-px overflow-hidden rounded-xl bg-line sm:grid-cols-2">
+            <article class="bg-bg p-6 sm:p-8">
+              <h3 class="font-display text-xl text-ink">Engagements &amp; portraits</h3>
+              <p class="mt-2 text-sm text-muted">Couples across the service area. The 3600 is the backdrop — chrome, color, and a piece of history in the frame.</p>
+            </article>
+            <article class="bg-bg p-6 sm:p-8">
+              <h3 class="font-display text-xl text-ink">Wedding-day 3600</h3>
+              <p class="mt-2 text-sm text-muted">Portraits with the Chevy on the wedding-day lawn. The truck is for photographs; the rest of the day stays yours.</p>
+            </article>
+            <article class="bg-bg p-6 sm:p-8">
+              <h3 class="font-display text-xl text-ink">Family &amp; holiday cards</h3>
+              <p class="mt-2 text-sm text-muted">Holiday cards and family sessions with wreaths, pumpkins, or lights on a real 1950 truck — not a studio backdrop.</p>
+            </article>
+            <article class="bg-bg p-6 sm:p-8">
+              <h3 class="font-display text-xl text-ink">Styled &amp; brand</h3>
+              <p class="mt-2 text-sm text-muted">Photographers and small brands who need a period truck. Image-use terms are written into the contract.</p>
+            </article>
+          </div>
+          <p class="mt-8 max-w-2xl text-sm text-muted">A certificate of insurance naming your venue or landowner is available on request. Coverage is commercial auto and general liability, not a collector policy.</p>
+          <a href="#book" class="inline-flex items-center justify-center font-sans text-sm font-medium bg-forest text-accent-fg hover:opacity-90 h-12 rounded-md px-5 mt-8">Request a photo date</a>
+        </div>
+      </section>
+      <section id="uncorked" class="border-t border-line bg-forest text-accent-fg">
+        <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
+          <p class="text-xs font-medium tracking-[0.18em] text-accent-fg/60 uppercase">3600 Uncorked · Spring 2027</p>
+          <h2 class="mt-3 max-w-2xl font-display text-3xl font-medium sm:text-4xl">The bar arrives. The pour is yours.</h2>
+          <p class="mt-4 max-w-2xl text-accent-fg/80">3600 Uncorked is a 1963 Yellowstone canned-ham trailer finished as a dry-hire mobile bar and towed by the same 3600. It is built for river weddings and Saturday events in oyster country. Service begins Spring 2027. Join the waitlist if you already have a date.</p>
+          <div class="mt-12 grid gap-8 md:grid-cols-3">
+            <article class="border-t border-accent-fg/20 pt-5">
+              <p class="text-xs tabular-nums text-accent-fg/50">01</p>
+              <h3 class="mt-3 font-display text-2xl">You rent the bar</h3>
+              <p class="mt-2 text-sm leading-relaxed text-accent-fg/75">You rent the finished 1963 Yellowstone trailer — hatch, ice, lighting, and optional glassware. It arrives with the 3600.</p>
+            </article>
+            <article class="border-t border-accent-fg/20 pt-5">
+              <p class="text-xs tabular-nums text-accent-fg/50">02</p>
+              <h3 class="mt-3 font-display text-2xl">You bring the pour</h3>
+              <p class="mt-2 text-sm leading-relaxed text-accent-fg/75">You supply beverages, mixers, and bartenders. If the venue requires a Virginia ABC banquet license, the host obtains it. Cork &amp; Carriage does not sell alcohol.</p>
+            </article>
+            <article class="border-t border-accent-fg/20 pt-5">
+              <p class="text-xs tabular-nums text-accent-fg/50">03</p>
+              <h3 class="mt-3 font-display text-2xl">We bring the pair</h3>
+              <p class="mt-2 text-sm leading-relaxed text-accent-fg/75">We deliver the truck and the bar, set them up, power them, and collect them after. One pair, one date.</p>
+            </article>
+          </div>
+          <dl class="mt-12 grid max-w-xl grid-cols-3 gap-4 border-t border-accent-fg/20 pt-8">
+            <div>
+              <dt class="text-xs tracking-wide text-accent-fg/50 uppercase">Trailer</dt>
+              <dd class="mt-1 font-display text-2xl">’63</dd>
+            </div>
+            <div>
+              <dt class="text-xs tracking-wide text-accent-fg/50 uppercase">Opens</dt>
+              <dd class="mt-1 font-display text-2xl">Spring ’27</dd>
+            </div>
+            <div>
+              <dt class="text-xs tracking-wide text-accent-fg/50 uppercase">ABC retail</dt>
+              <dd class="mt-1 font-display text-2xl">None</dd>
+            </div>
+          </dl>
+          <a href="#book" class="inline-flex items-center justify-center font-sans text-sm font-medium bg-accent-fg text-forest hover:opacity-90 h-12 rounded-md px-5 mt-10">Join the waitlist</a>
+        </div>
+      </section>
+      <section id="circuit" class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
+        <p class="text-xs font-medium tracking-[0.18em] text-muted uppercase">Service area</p>
+        <h2 class="mt-3 max-w-2xl font-display text-3xl font-medium text-ink sm:text-4xl">Middle Peninsula, Northern Neck, and nearby.</h2>
+        <div class="mt-10 grid gap-4 md:grid-cols-3">
+          <article class="rounded-xl bg-surface p-6 shadow-[var(--shadow-border)]">
+            <h3 class="font-display text-xl text-ink">Middle Peninsula</h3>
+            <p class="mt-2 text-sm leading-relaxed text-muted">Urbanna, Deltaville, Saluda, Hartfield, Gloucester, Mathews, and West Point. Houses, farms, and waterfront lawns along the Rappahannock and Piankatank.</p>
+          </article>
+          <article class="rounded-xl bg-surface p-6 shadow-[var(--shadow-border)]">
+            <h3 class="font-display text-xl text-ink">Northern Neck</h3>
+            <p class="mt-2 text-sm leading-relaxed text-muted">Irvington, Kilmarnock, White Stone, Reedville, and Warsaw. Estates near Tides Inn and farms in Lancaster County.</p>
+          </article>
+          <article class="rounded-xl bg-surface p-6 shadow-[var(--shadow-border)]">
+            <h3 class="font-display text-xl text-ink">Surrounding</h3>
+            <p class="mt-2 text-sm leading-relaxed text-muted">Williamsburg, James City, York, and New Kent. Richmond and Hampton Roads by request; travel is arranged separately.</p>
+          </article>
+        </div>
+      </section>
+      <section class="border-t border-line bg-surface">
+        <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+          <p class="text-xs font-medium tracking-[0.18em] text-muted uppercase">Lookbook</p>
+          <h2 class="mt-3 font-display text-3xl font-medium text-ink sm:text-4xl">Our signature rig.</h2>
+          <div class="mt-8 grid gap-3 md:grid-cols-2">
+            <img src="lookbook-beach.jpg" alt="Green 1950 Chevrolet 3600 on a Virginia beach, dunes and water beyond" class="h-64 w-full rounded-lg object-cover sm:h-80" />
+            <img src="lookbook-onemo-rear.jpg" alt="Green 1950 Chevrolet 3600 from the rear three-quarter in Middlesex County" class="h-64 w-full rounded-lg object-cover sm:h-80" />
+          </div>
+        </div>
+      </section>
+      <section id="book" class="border-t border-line bg-surface">
+        <div class="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-[1fr_1.05fr]">
+          <div>
+            <p class="text-xs font-medium tracking-[0.18em] text-muted uppercase">Request a date</p>
+            <h2 class="mt-3 font-display text-3xl font-medium text-ink sm:text-4xl">Book the 3600 now. Hold a date for 2027.</h2>
+            <p class="mt-4 max-w-md text-muted">The photo truck is booking now. 3600 Uncorked opens Spring 2027. Use the form if you already have a date in mind.</p>
+            <p class="mt-6 text-sm text-muted">Tell us the date, the location, and your photographer. A certificate of insurance is available on request. Write to <a href="mailto:karen@corkncarriage.com" class="underline underline-offset-4">karen@corkncarriage.com</a>.</p>
+          </div>
+          <form id="book-form" class="rounded-xl bg-bg p-6 shadow-[var(--shadow-border)] sm:p-8" action="mailto:karen@corkncarriage.com" method="post" enctype="text/plain">
+            <div class="grid gap-4 sm:grid-cols-2">
+              <label class="block text-sm text-muted sm:col-span-2">Service
+                <select name="Service" class="mt-1.5 h-11 w-full rounded-md bg-bg px-3 text-sm text-ink shadow-[var(--shadow-border)] outline-none">
+                  <option value="Photo truck — available now" selected>Photo truck — available now</option>
+                  <option value="3600 Uncorked waitlist — Spring 2027">3600 Uncorked waitlist — Spring 2027</option>
+                </select>
+              </label>
+              <label class="block text-sm text-muted">Name
+                <input name="Name" class="mt-1.5 h-11 w-full rounded-md bg-bg px-3 text-sm text-ink shadow-[var(--shadow-border)] outline-none" autocomplete="name" required />
+              </label>
+              <label class="block text-sm text-muted">Email
+                <input type="email" name="Email" class="mt-1.5 h-11 w-full rounded-md bg-bg px-3 text-sm text-ink shadow-[var(--shadow-border)] outline-none" autocomplete="email" required />
+              </label>
+              <label class="block text-sm text-muted">Date
+                <input type="date" name="Date" class="mt-1.5 h-11 w-full rounded-md bg-bg px-3 text-sm text-ink shadow-[var(--shadow-border)] outline-none" />
+              </label>
+              <label class="block text-sm text-muted">Where
+                <select name="Where" class="mt-1.5 h-11 w-full rounded-md bg-bg px-3 text-sm text-ink shadow-[var(--shadow-border)] outline-none">
+                  <option>Middle Peninsula</option>
+                  <option>Northern Neck</option>
+                  <option>Surrounding</option>
+                </select>
+              </label>
+              <label class="block text-sm text-muted sm:col-span-2">Occasion
+                <select name="Occasion" class="mt-1.5 h-11 w-full rounded-md bg-bg px-3 text-sm text-ink shadow-[var(--shadow-border)] outline-none">
+                  <option>Engagement / portraits</option>
+                  <option>Seasonal / holiday cards</option>
+                  <option>Family session</option>
+                  <option>Styled / brand</option>
+                  <option>Wedding-day 3600</option>
+                </select>
+              </label>
+              <label class="block text-sm text-muted sm:col-span-2">Notes
+                <textarea name="Notes" class="mt-1.5 min-h-28 w-full rounded-md bg-bg px-3 py-2 text-sm text-ink shadow-[var(--shadow-border)] outline-none" placeholder="Photographer, location, seasonal props (wreath, pumpkins, lights)."></textarea>
+              </label>
+            </div>
+            <button class="inline-flex items-center justify-center font-sans text-sm font-medium bg-forest text-accent-fg hover:opacity-90 h-12 rounded-md px-5 mt-6 w-full sm:w-auto" type="submit">Request the truck</button>
+            <p class="mt-3 text-xs text-subtle">Photo days are an equipment rental. We confirm dates and details by email.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="border-t border-line bg-ink text-accent-fg">
+      <div class="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-12 sm:px-6 md:flex-row md:items-end md:justify-between">
+        <div>
+          <div class="flex items-center gap-2.5">
+            <img src="logo.jpg" alt="" class="rounded-full object-cover size-14" />
+            <div>
+              <p class="font-display text-xl">Cork &amp; Carriage LLC</p>
+              <p class="text-xs tracking-wide text-accent-fg/50 uppercase">Middlesex County, Virginia</p>
+            </div>
+          </div>
+          <p class="mt-3 max-w-sm text-sm text-accent-fg/70">Photo truck available now. 3600 Uncorked, the dry-hire mobile bar, opens Spring 2027. Serving the Middle Peninsula, Northern Neck, and surrounding areas.</p>
+        </div>
+        <div class="text-sm text-accent-fg/70">
+          <p>3600 Uncorked is dry hire. The host and venue confirm any ABC requirements.</p>
+          <p class="mt-2"><a href="mailto:karen@corkncarriage.com" class="underline decoration-accent-fg/30 underline-offset-4 hover:decoration-accent-fg">karen@corkncarriage.com</a></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    const header = document.getElementById("site-header");
+    const onScroll = () => {
+      if (window.scrollY > 24) header.classList.add("nav-scrolled");
+      else header.classList.remove("nav-scrolled");
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    const btn = document.getElementById("menu-btn");
+    const panel = document.getElementById("mobile-panel");
+    btn.addEventListener("click", () => {
+      const open = panel.classList.toggle("open");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    panel.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => panel.classList.remove("open")));
+  </script>
+</body>
+</html>
