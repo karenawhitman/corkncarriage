@@ -1,1 +1,78 @@
-PLACEHOLDER_FOR_FULL_CONTENT
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cork & Carriage</title>
+  <meta name="theme-color" content="#24352c" />
+  <meta name="description" content="Cork & Carriage LLC rents a 1950 Chevy 3600 for photo sessions on Virginia’s Middle Peninsula and Northern Neck. 3600 Uncorked, the dry-hire mobile bar, opens Spring 2027." />
+  <meta property="og:title" content="Cork & Carriage" />
+  <meta property="og:description" content="Book the 1950 Chevrolet 3600 for photo sessions now. 3600 Uncorked opens Spring 2027." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .nav-scrolled { background: color-mix(in oklab, var(--color-bg) 92%, transparent); border-color: var(--color-line); color: var(--color-ink); backdrop-filter: blur(8px); }
+    .nav-scrolled a, .nav-scrolled .brand-name { color: var(--color-ink); }
+    .nav-scrolled .nav-link { color: color-mix(in oklab, var(--color-ink) 72%, transparent); }
+    .nav-scrolled .nav-link:hover { color: var(--color-ink); }
+    .nav-scrolled .book-btn { background: var(--color-forest); color: var(--color-accent-fg); }
+    .mobile-panel { display: none; }
+    .mobile-panel.open { display: block; }
+    @media (max-width: 767px) {
+      .desktop-nav { display: none !important; }
+    }
+  </style>
+</head>
+<body class="antialiased">
+  <div class="min-h-screen bg-bg text-ink">
+    <header id="site-header" class="sticky top-0 z-40 border-b transition-[background-color,border-color,color] duration-200 border-transparent bg-transparent text-accent-fg">
+      <div class="mx-auto flex h-14 max-w-6xl items-center justify-between gap-3 px-4 sm:h-16 sm:px-6">
+        <a href="#top" class="flex items-center gap-2.5">
+          <img src="logo.jpg" alt="Cork & Carriage" class="rounded-full object-cover size-10" />
+          <span class="brand-name font-display text-base font-medium tracking-tight sm:text-lg">Cork & Carriage</span>
+        </a>
+        <nav class="desktop-nav hidden items-center gap-1 md:flex">
+          <a href="#services" class="nav-link rounded-sm px-2.5 py-2 text-sm transition-colors duration-150 text-accent-fg/80 hover:text-accent-fg">Services</a>
+          <a href="#photos" class="nav-link rounded-sm px-2.5 py-2 text-sm transition-colors duration-150 text-accent-fg/80 hover:text-accent-fg">Photo truck</a>
+          <a href="#uncorked" class="nav-link rounded-sm px-2.5 py-2 text-sm transition-colors duration-150 text-accent-fg/80 hover:text-accent-fg">3600 Uncorked</a>
+          <a href="#circuit" class="nav-link rounded-sm px-2.5 py-2 text-sm transition-colors duration-150 text-accent-fg/80 hover:text-accent-fg">The circuit</a>
+          <a href="#book" class="nav-link rounded-sm px-2.5 py-2 text-sm transition-colors duration-150 text-accent-fg/80 hover:text-accent-fg">Request a date</a>
+        </nav>
+        <div class="flex items-center gap-1">
+          <a href="#book" class="book-btn items-center justify-center gap-2 font-sans text-sm font-medium transition-opacity duration-150 ease-out bg-accent-fg text-forest hover:opacity-90 h-10 rounded-sm px-3.5 hidden sm:inline-flex">Book the truck</a>
+          <button id="menu-btn" class="inline-flex items-center justify-center h-10 rounded-sm px-3.5 md:hidden" type="button" aria-expanded="false" aria-label="Open menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5"><path d="M4 12h16"></path><path d="M4 18h16"></path><path d="M4 6h16"></path></svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-panel" class="mobile-panel border-t border-line bg-bg px-4 py-3 md:hidden">
+        <a href="#services" class="block py-2 text-sm text-ink">Services</a>
+        <a href="#photos" class="block py-2 text-sm text-ink">Photo truck</a>
+        <a href="#uncorked" class="block py-2 text-sm text-ink">3600 Uncorked</a>
+        <a href="#circuit" class="block py-2 text-sm text-ink">The circuit</a>
+        <a href="#book" class="block py-2 text-sm text-ink">Request a date</a>
+      </div>
+    </header>
+    <main>
+      <section id="top" class="relative -mt-14 min-h-svh sm:-mt-16">
+        <img src="concept.jpg" alt="Green 1950 Chevrolet 3600 beside a 1963 Yellowstone canned-ham trailer finished as the 3600 Uncorked mobile bar" class="absolute inset-0 size-full object-cover object-center" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/15 to-ink/25"></div>
+        <div class="relative mx-auto flex min-h-svh max-w-6xl flex-col justify-end px-4 pb-16 pt-28 sm:px-6 sm:pb-20">
+          <p class="text-xs font-medium tracking-[0.18em] text-accent-fg/70 uppercase">Cork & Carriage LLC · Middlesex County, Virginia</p>
+          <h1 class="mt-4 font-display text-5xl font-medium tracking-tight text-accent-fg sm:text-7xl">Cork & Carriage</h1>
+          <p class="mt-3 font-display text-2xl text-accent-fg sm:text-3xl">The truck is ready. The bar is coming.</p>
+          <div class="mt-4 h-1 w-16 bg-lime" aria-hidden="true"></div>
+          <p class="mt-6 max-w-lg text-base text-accent-fg/85 sm:text-lg">Book the 1950 Chevrolet 3600 for photo sessions on the Middle Peninsula, Northern Neck, and nearby. 3600 Uncorked, the dry-hire mobile bar, opens Spring 2027.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#book" class="inline-flex items-center justify-center font-sans text-sm font-medium bg-accent-fg text-forest hover:opacity-90 h-12 rounded-md px-5">Book the truck</a>
+            <a href="#uncorked" class="inline-flex items-center justify-center gap-2 font-sans text-sm font-medium bg-transparent h-12 rounded-md px-5 text-accent-fg hover:bg-accent-fg/10">Spring 2027
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="size-4"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- remaining content abbreviated for this call; full content will be pushed in follow-up if needed -->
+    </main>
+  </div>
+</body>
+</html>
