@@ -214,6 +214,7 @@
             <input type="hidden" name="_subject" value="New Cork & Carriage booking request">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://www.corkncarriage.com/#book?success=1">
             <div class="grid gap-4 sm:grid-cols-2">
               <label class="block text-sm text-muted sm:col-span-2">Service
                 <select name="Service" class="mt-1.5 h-11 w-full rounded-md bg-bg px-3 text-sm text-ink shadow-[var(--shadow-border)] outline-none">
@@ -252,6 +253,10 @@
             </div>
             <button class="inline-flex items-center justify-center font-sans text-sm font-medium bg-forest text-accent-fg hover:opacity-90 h-12 rounded-md px-5 mt-6 w-full sm:w-auto" type="submit">Request the truck</button>
             <p id="form-status" class="mt-3 text-xs text-subtle hidden"></p>
+            <div id="thank-you" class="mt-6 hidden rounded-lg bg-forest/10 p-4 text-sm text-forest">
+              <p class="font-medium">Thank you — your request is on its way.</p>
+              <p class="mt-1 text-xs">We’ll reply by email to confirm the date and details.</p>
+            </div>
             <p class="mt-3 text-xs text-subtle">Photo days are an equipment rental. We confirm dates and details by email.</p>
           </form>
         </div>
@@ -291,6 +296,18 @@
       btn.setAttribute("aria-expanded", open ? "true" : "false");
     });
     panel.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => panel.classList.remove("open")));
+
+    // Show thank-you message after FormSubmit redirect
+    if (window.location.hash.includes("success=1") || new URLSearchParams(window.location.search).get("success") === "1") {
+      const form = document.getElementById("book-form");
+      const thankYou = document.getElementById("thank-you");
+      if (form && thankYou) {
+        form.classList.add("hidden");
+        thankYou.classList.remove("hidden");
+        // Clean the URL so a refresh doesn’t keep showing it
+        history.replaceState(null, "", window.location.pathname + "#book");
+      }
+    }
   </script>
 </body>
 </html>
